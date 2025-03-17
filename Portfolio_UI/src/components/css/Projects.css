@@ -1,0 +1,76 @@
+.ProjectContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  /* color: black; */
+  position: relative;
+}
+
+.ProjectCard {
+  flex: 0 0 auto;
+  width: 300px;
+  height: fit-content;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  scroll-snap-align: start;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+  color: white;
+}
+
+.ProjectCard p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+  color: rgb(234, 243, 239);
+}
+
+.ProjectCard img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ProjectcardLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.ProjectcardLinks a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(88, 19, 156);
+  padding: 5px 10px;
+  border-radius: 15px;
+  outline: none;
+}
+.ProjectcardLinks a:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 320px) {
+  .ProjectCard {
+    width: 250px;
+    font-size: 13px;
+    height: fit-content;
+  }
+
+  .ProjectCard p {
+    line-height: 1.3;
+    font-size: 12px;
+  }
+}

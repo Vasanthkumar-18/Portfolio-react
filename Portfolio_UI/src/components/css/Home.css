@@ -1,0 +1,132 @@
+.HomeContainer {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.homeLeftHalf {
+  width: 50%;
+  height: 100%;
+  background-color: rebeccapurple;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.leftHalfTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  height: 8%;
+  align-items: center;
+}
+.leftHalfTop a {
+  color: white;
+  cursor: pointer;
+}
+.leftHalfName {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  font-size: 1.2rem;
+  height: 44%;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leftHalfIconContanier {
+  width: 50px;
+  height: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.leftHalfIconContanier a {
+  color: white;
+}
+
+.leftHalfLine {
+  width: 2px;
+  background-color: white;
+  height: 68%;
+}
+.homeRightHalf {
+  background-color: white;
+  color: rebeccapurple;
+  width: 50%;
+  display: flex;
+  z-index: 100;
+}
+.rightHalfTop {
+  height: 8%;
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightHalfLeftSection {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.leftHalfIcons,
+.HomeContainer p,
+.leftHalfTop a {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.HomeContainer p:hover,
+.leftHalfIcons:hover,
+.leftHalfTop a:hover {
+  transform: scale(1.4);
+}
+.homeBodyImage {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.homeBodyImage img {
+  height: 100%;
+  width: fit-content;
+  z-index: 101;
+}
+body {
+  background-color: yellow;
+}
+@media screen and (max-width: 380px) {
+  .HomeContainer {
+    font-size: 11px;
+  }
+
+  .leftHalfIcons {
+    height: 20px;
+    width: 20px;
+  }
+  .leftHalfTop {
+    padding: 0 2%;
+  }
+  .leftHalfTop a {
+    font-size: 9px;
+  }
+  .leftHalfName {
+    font-size: 13px;
+  }
+  .leftHalfIcons {
+    height: 18px;
+    width: 18px;
+  }
+}
