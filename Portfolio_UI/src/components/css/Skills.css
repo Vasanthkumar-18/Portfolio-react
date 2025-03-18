@@ -1,0 +1,74 @@
+.skillContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: black;
+}
+.threads-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.SkillsParent {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+
+.frontendSkills,
+.backendSkills {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  height: 340px;
+  border: 1px solid white;
+  text-align: justify;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  color: white;
+  border-radius: 5px;
+  justify-content: space-around;
+  /* backdrop-filter: blur(10px); */
+  line-height: 1.5;
+}
+.spaceSkills {
+  padding-left: 5%;
+}
+@media screen and (min-width: 425px) and (max-width: 582px) {
+  .frontendSkills,
+  .backendSkills {
+    width: 45%;
+    padding: 0.5rem;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .SkillsParent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    width: 100%;
+    overflow: scroll;
+    /* background-color: red; */
+    padding-top: 20%;
+    /* flex-wrap: wrap; */
+    /* overflow-y: auto; */
+    /* margin-bottom: 30%; */
+  }
+  .frontendSkills,
+  .backendSkills {
+    width: 80%;
+    height: 400px;
+    text-align: justify;
+    
+  }
+}

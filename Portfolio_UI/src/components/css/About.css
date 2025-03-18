@@ -32,17 +32,17 @@
 .AboutImage img {
   height: 100%;
   width: fit-content;
-  /* animation: shake 3s infinite; */
+  animation: shake 3s infinite; 
 }
-/* @keyframes shake {
+@keyframes shake {
   0% {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   } 
 }
-  */
+ 
 @media screen and (min-width: 510px) and (max-width: 769px) {
   .AboutChild {
     font-size: 13px;
